@@ -1,5 +1,7 @@
-# extrakeybinds-forge
+# Origins Extra Keybinds Forge
 A minecraft mod that adds 7 more keybinds to use for origins
+
+CurseForge Link: https://www.curseforge.com/minecraft/mc-mods/origins-extra-keybinds-forge
 
 Syntax:
 - key.extrakeybindsforge.tertiary_active = 3rd Ability Key (Tertiary)
