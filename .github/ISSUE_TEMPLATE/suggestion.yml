@@ -1,0 +1,24 @@
+name: Bug Report
+description: Report a bug/crash.
+title: "[Suggestion] "
+labels:
+  - enhancement
+body
+ - type: input
+   id: modpack
+   attributes:
+      label: Related Version
+      description: >-
+        Please add the Modpack version as seen on CurseForge
+   validations:
+      required: false
+ - type: textarea
+   id: issue
+   attributes:
+      label: What is your suggestion?
+      description: >-
+        Please best describe the suggestion you are having, what should be added/changed?
+        Do you need hooks/integrations for other mods, etc. (You can attach screenshots 
+        here and it is highly recommend doing so)
+   validations:
+      required: true
