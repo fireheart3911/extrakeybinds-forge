@@ -3,7 +3,7 @@ description: Report a bug/crash.
 title: "[Suggestion] "
 labels:
   - enhancement
-body
+body:
  - type: input
    id: modpack
    attributes:
