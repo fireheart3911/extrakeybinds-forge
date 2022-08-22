@@ -3,7 +3,7 @@ description: File a bug report
 title: "[Bug]: "
 labels: ["bug", "triage"]
 assignees:
-  - octocat
+  - fireheart3911
 body:
   - type: markdown
     attributes:
@@ -19,7 +19,7 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: version
+    id: mcversion
     attributes:
       label: Version
       description: What version of the mod are you running?
