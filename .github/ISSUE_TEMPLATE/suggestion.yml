@@ -1,5 +1,5 @@
-name: Bug Report
-description: Report a bug/crash.
+name: Suggestion / Enhancement
+description: Suggest additions and changes for the mod.
 title: "[Suggestion] "
 labels:
   - enhancement
