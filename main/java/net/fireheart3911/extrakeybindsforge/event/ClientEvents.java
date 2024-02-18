@@ -9,17 +9,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 public class ClientEvents {
-    @Mod.EventBusSubscriber(modid = ExtraKeybindsForge.MOD_ID, value = Dist.CLIENT)
-    public static class ClientForgeEvents {
-
-        @SubscribeEvent
-        public static void onKeyInput(InputEvent.Key event){
-
-
-        }
-    }
-
-    @Mod.EventBusSubscriber(modid = ExtraKeybindsForge.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
+    @Mod.EventBusSubscriber(modid = Origins.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class ClientModBusEvents{
         @SubscribeEvent
         public static void onKeyRegister(RegisterKeyMappingsEvent event){
