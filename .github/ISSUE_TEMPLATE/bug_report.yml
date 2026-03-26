@@ -27,6 +27,7 @@ body:
         - 1.0
         - 1.0.1
         - 1.1
+        - 1.2
     validations:
       required: true
   - type: dropdown
@@ -40,6 +41,10 @@ body:
         - 1.19
         - 1.19.1
         - 1.19.2
+        - 1.20.1
+        - 1.21.1
+        - 1.21.x
+        - 26.1
     validations:
       required: true
   - type: textarea
