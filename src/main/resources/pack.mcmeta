@@ -1,6 +1,7 @@
 {
   "pack": {
     "description": "Extra Keybinds Forge Resources",
-    "pack_format": 34
+    "min_format": 84,
+    "max_format": 88
   }
 }

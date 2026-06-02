@@ -3,16 +3,19 @@ package net.fireheart3911.extrakeybindsforge.keybind;
 import com.mojang.blaze3d.platform.InputConstants;
 import net.fireheart3911.extrakeybindsforge.ExtraKeybindsForge;
 import net.minecraft.client.KeyMapping;
+import net.minecraft.resources.Identifier;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
 import net.neoforged.neoforge.client.settings.KeyConflictContext;
 
-@EventBusSubscriber(modid = ExtraKeybindsForge.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(modid = ExtraKeybindsForge.MOD_ID, value = Dist.CLIENT)
 public class ModKeyBindings {
 
-    public static final String CATEGORY = "key.categories." + ExtraKeybindsForge.MOD_ID;
+    public static final KeyMapping.Category CATEGORY = new KeyMapping.Category(
+            Identifier.fromNamespaceAndPath(ExtraKeybindsForge.MOD_ID, "abilities")
+    );
 
     public static final KeyMapping TERTIARY_ACTIVE = new KeyMapping(
             "key.extrakeybindsforge.tertiary_active",
@@ -65,6 +68,7 @@ public class ModKeyBindings {
 
     @SubscribeEvent
     public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
+        event.registerCategory(CATEGORY);
         event.register(TERTIARY_ACTIVE);
         event.register(QUATERNARY_ACTIVE);
         event.register(QUINARY_ACTIVE);

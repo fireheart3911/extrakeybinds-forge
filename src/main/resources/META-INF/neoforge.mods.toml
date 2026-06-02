@@ -15,7 +15,7 @@ Adds extra keybindings for ability activation (3rd through 9th ability keys).
 [[dependencies.${mod_id}]]
 modId = "neoforge"
 type = "required"
-versionRange = "${loader_version_range}"
+versionRange = "${neo_version_range}"
 ordering = "NONE"
 side = "BOTH"
 
